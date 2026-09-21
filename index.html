@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <title>Noah's Ark - Home</title>
+        <link rel="shortcut icon" href="r1.png">
+        <style>
+            body{
+                background: #000000;
+            }
+            .orange{background-color: orange; width: 100%; padding: 20px;
+            animation: flash 1s infinite;}
+            h1 {
+                font-family:"Source Code Pro", monospace;
+                text-align: center;
+                font-size: 60px;
+                color:white;
+                font-family:"Pixelify Sans", sans-serif;
+                animation: text 1s infinite;
+            }
+            .orange p {animation: text 1s infinite;}
+            h2 {text-align: center; font-family:"Pixelify Sans", sans-serif;
+        color:white; font-size:30px;}
+            p{text-align:center; font-family: "Source Code Pro", monospace;color:white;}
+            .rocket{background-color: #211e1e; padding:20px;border:10px solid orange;}
+            .rocket h1, .rocket h2, .rocket p {color:white;}
+            .flex-container {
+  display: flex;       /* Aligns items horizontally */
+  gap: 15px;           /* Adds space between the items */
+}
+
+@keyframes flash{
+    from {background-color:black;}
+    to {background-color:orange;}
+}
+@keyframes text{
+    from {color:white;}
+    to {color:black;}
+}
+a{color:black;}
+.black{color:black;}
+.box { border:10px solid orange;padding:20px;}
+#demo{color:orange;}
+button{
+    color:black;
+    background-color: orange;
+    font-family: "Source Code Pro", monospace;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding:20px;
+    font-size:20px;
+    position:relative;
+    left:40%;
+}
+button:hover{
+    scale:1.2;
+    cursor:pointer;
+}
+.logoband{background-color: white;padding: 20px;width: fit-content;}
+        </style>
+    </head>
+    <body>
+        <div class="orange"><h1 class="black">🚀 NOAH'S ARK</h1></div>
+        <h2>TIME UNTIL LAUNCH:</h2>
+        <h2 id="demo" class="box"></h2>
+        <p>(i) Launch video will be available after we have launched</p>
+        <div style="position:relative;left:40%;" class="logoband"><a href="https://y-star-aerospace-website--ystarindustries.replit.app/"><img src="image.png" width="100"></a>
+        <a href="https://banananews.netlify.app"><img src="banana.png" width="100"></div></a>
+        
+        <h2>By Y-Star Rocketry and Banana Aerospace.</h2>
+        <p>The Noah's Ark rocket is the peak of engineering. It uses the high-tech Rosita engines as propulsion and a state-of-the-art parachute release system for guaranteed successful landings.</p>
+        <a href="#about"><button>Discover our rocket</button></a>
+        <h2 id="about">ABOUT NOAH'S ARK</h2>
+        <div class="flex-container">
+        <div class="rocket">
+            <img src="Noah'sArk_Assembly.png" width="100%">
+            <h2>Noah's Ark (Y1)</h2>
+            <p>Noah's Ark is our test rocket designed to launch payloads into the troposphere. It uses an advanced spring-loaded system to release a parachute at the right time, and advanced flight computers</p>
+            <p>Noah's Ark is supported by Banana Aerospace. Banana Aerospace is proud to have it's logo visible on the fairing.</p>
+        </div>
+        <div class="rocket">
+            <img src="Rocket-Crafters-1-John-Kraus.jpeg" width="200px">
+            <h2>Rosita Engine</h2>
+            <p>The Rosita Engine is unique in that it possesses extreme launch power while maintaining barely any weight. It was manufactured with lots of testing to ensure utmost quality.</p>
+        </div>
+        <div class="rocket">
+            <img src="asf.png" width="100%">
+            <h2>Advanced Parachute Release System</h2>
+            <p>The advanced parachute release system was crafted with many different high-tech electronic components and is one of the most reliable systems worldwide</p>
+        </div>
+        </div>
+        <h2>OUR GOALS:</h2>
+        <div class="flex-container">
+            <div class="rocket">
+                <img src="space-rocket-shuttle-with-blast-puffs-smoke-against-black-sky-spaceship-lift-off-black-background-space-mission-concept_338491-12882.avif" width="300px">
+                <h2>Leave the launchpad</h2>
+                <p>Using the Rosita Engine, we will be able to blast high into the air</p>
+            </div>
+            <div class="rocket">
+                <img src="Gemini_Generated_Image_vsicexvsicexvsic.jpe" width="150">
+                <h2>Land safely</h2>
+                <p>The parachute will allow us to have a perfect landing</p>
+            </div>
+        </div>
+        <div class="orange"><p class="black">(c) Noah's Ark 2026</p></div>
+        <script>var countDownDate = new Date("Oct 31, 2026 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);</script>
+    </body>
+</html>
