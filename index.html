@@ -42,35 +42,60 @@ a{color:black;}
 .black{color:black;}
 .box { border:10px solid orange;padding:20px;}
 #demo{color:orange;}
-button{
-    color:black;
-    background-color: orange;
-    font-family: "Source Code Pro", monospace;
-    border-radius: 10px;
-    border: 3px solid black;
+button {
+    background-color: black;
+    border:none;
+    width:100%;
+    text-align:center;
+    padding-left:25%;
+    padding-right:25%;
+}
+button p {
     padding:20px;
-    font-size:20px;
-    position:relative;
-    left:40%;
+    border: 2px solid orange;
+    border-radius: 5%;
+    color:white;
+    text-align:center;
+    font-size:30px;
+    font-family: "Pixelify Sans", sans-serif;
 }
 button:hover{
     scale:1.2;
+    transition: ease-in-out;
     cursor:pointer;
 }
-.logoband{background-color: white;padding: 20px;width: fit-content;}
-        </style>
+.logoband{background-color: white; width: fit-content;}
+#wrapper {
+    padding-left:25%;
+    padding-right:25%;
+}.wrapping{
+    padding-left: 25%;
+    padding-right:25%;
+    width: 100%;
+}
+ .wrapping2 {
+        padding-left: 15%;
+    padding-right:15%;
+ }       </style>
     </head>
     <body>
         <div class="orange"><h1 class="black">🚀 NOAH'S ARK</h1></div>
+        <img src="noah'sark.png" style="width:100%;">
         <h2>TIME UNTIL LAUNCH:</h2>
-        <h2 id="demo" class="box"></h2>
-        <p>(i) Launch video will be available after we have launched</p>
-        <div style="position:relative;left:40%;" class="logoband"><a href="https://y-star-aerospace-website--ystarindustries.replit.app/"><img src="image.png" width="100"></a>
-        <a href="https://banananews.netlify.app"><img src="banana.png" width="100"></div></a>
+        <div id="wrapper"><h2 id="demo" class="box"></h2></div>
         
+        <p>(i) Launch video will be available after we have launched</p>
+        <div class="wrapping"><div class="wrapping2"><div class="logoband"><a href="https://y-star-aerospace-website--ystarindustries.replit.app/"><img src="image.png" width="100"></a>
+        <a href="https://banananews.netlify.app"><img src="banana.png" width="100"></a></div></div>
+        </div>
         <h2>By Y-Star Rocketry and Banana Aerospace.</h2>
         <p>The Noah's Ark rocket is the peak of engineering. It uses the high-tech Rosita engines as propulsion and a state-of-the-art parachute release system for guaranteed successful landings.</p>
-        <a href="#about"><button>Discover our rocket</button></a>
+
+        <video style="width:100%;" autoplay muted loop>
+  <source src="quality.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+        <a href="#about"><button><p>Discover our rocket</p></button></a>
         <h2 id="about">ABOUT NOAH'S ARK</h2>
         <div class="flex-container">
         <div class="rocket">
